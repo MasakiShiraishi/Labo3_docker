@@ -1,0 +1,46 @@
+### GET request to example server
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/warehouse
+###
+POST http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/two-products
+###
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/products
+###
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/products/1
+###
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/products/2
+###
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/products/3
+###
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/products/4
+###
+POST http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/product
+Content-Type: application/json
+
+{
+  "id": "3",
+  "name": "Milk",
+  "category": "drink",
+  "rating": 10,
+  "createdDate": "2024-10-02",
+  "lastModifiedDate": "2024-10-02"
+}
+###
+POST https://laboration2.fungover.org/Laboration2-1.0-SNAPSHOT/api/product
+Content-Type: application/json
+
+{
+  "category": "drink",
+  "createdDate": "2024-10-02",
+  "getCreatedDate": "2024-10-02",
+  "getLastModifiedDate": "2024-10-02",
+  "id": "3",
+  "lastModifiedDate": "2024-10-02",
+  "name": "Milk",
+  "rating": 8
+}
+###
+
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/category/drink
+###
+GET http://localhost:8080/Laboration2-1.0-SNAPSHOT/api/category/books
+###
