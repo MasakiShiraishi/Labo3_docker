@@ -24,7 +24,9 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: https://github.com/MasakiShiraishi/Labo3_docker.git#main
+          file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          target: final
-          tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+          target: test
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
