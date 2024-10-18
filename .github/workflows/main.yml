@@ -31,4 +31,4 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.DOCKER_USERNAME }}/Labo3_docker:latest
+          tags: ${{ env.DOCKER_USERNAME }}/labo3_docker:latest
