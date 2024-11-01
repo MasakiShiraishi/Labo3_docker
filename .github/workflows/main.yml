@@ -43,4 +43,4 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          platforms: linux/amd64,linux
+          platforms: linux/amd64,linux/arm64
